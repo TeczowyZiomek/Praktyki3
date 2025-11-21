@@ -1,0 +1,174 @@
+/* Import fontu - już w HTML */
+
+/* Reset podstawowy */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Jasne tło */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Główne okno kalkulatora */
+.calculator-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Kompaktowy rozmiar */
+    padding: 20px;
+}
+
+/* Zegar */
+.clock {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #4a4e69; /* Ciemniejszy kolor dla elegancji */
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Wyświetlacz */
+.display {
+    background-color: #f0f2f5;
+    color: #333333;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Zapobieganie ucinaniu długich liczb */
+}
+
+/* Siatka przycisków */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny o równej szerokości */
+    gap: 10px;
+}
+
+/* Styl przycisków */
+button {
+    border: none;
+    padding: 20px 0;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Przyciski liczb i kropka */
+.btn-number {
+    background-color: #e0eaf6; /* Jasnoniebieskie tło */
+    color: #3d5a80;
+}
+.btn-number:hover {
+    background-color: #c9d7e5;
+}
+
+/* Przyciski operatorów (+, -, *, /) */
+.btn-operator {
+    background-color: #ee6c4d; /* Akcentujący pomarańczowy */
+    color: #ffffff;
+}
+.btn-operator:hover {
+    background-color: #e05b3c;
+}
+
+/* Przycisk równości (=) */
+.btn-equal {
+    background-color: #2a9d8f; /* Kontrastowy zielony */
+    color: #ffffff;
+    /* Ustawienie pozycji siatki dla = */
+    grid-column: 4;
+    grid-row: 4 / span 2; /* Zajmuje dwie komórki w pionie, obok 3 i . */
+    height: 100%; /* Wypełnienie przestrzeni */
+    min-height: 100px; /* Zapewnienie minimalnej wysokości */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-equal:hover {
+    background-color: #26897c;
+}
+
+
+/* Przycisk czyszczenia (C) */
+.btn-clear {
+    background-color: #98c1d9; /* Neutralny niebieski/szary */
+    color: #ffffff;
+}
+.btn-clear:hover {
+    background-color: #83b2cc;
+}
+
+/* Modyfikatory siatki */
+.span-2 {
+    grid-column: span 2;
+}
+
+.buttons .span-2:nth-child(11) { /* Przycisk 0 */
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+/* --- Style dla Jajcarskiego Alertu --- */
+
+.error-alert {
+    position: fixed; /* Zawsze na wierzchu, niezależnie od przewijania */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.9); /* Półprzezroczysta czerwona zasłona */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000; /* Upewnienie się, że jest na samej górze */
+    opacity: 0; /* Domyślnie ukryty */
+    pointer-events: none; /* Pozwala klikać to, co jest pod spodem, gdy jest ukryty */
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.error-alert.visible {
+    opacity: 1; /* Pokazanie, gdy ma klasę 'visible' */
+    pointer-events: all; /* Blokowanie klikania w elementy pod spodem, gdy jest widoczny */
+}
+
+#error-heading {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#error-message {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#error-message strong {
+    color: #ffcc00; /* Żółte podświetlenie klawisza */
+}
+
+.timer-message {
+    font-size: 1.5em;
+    font-style: italic;
+    opacity: 0.8;
+}
