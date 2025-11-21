@@ -1,0 +1,53 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+input
+{
+    background-color: plum;
+    color: white;
+}
+
+h1
+{
+    color: ghostwhite;
+}
+
+body
+{
+    background-color: pink;
+}
+
+p
+{
+    color: aliceblue;
+}
+
+#name
+{
+    height: 50px;
+}
+
+#sname
+{
+    height: 50px;
+}
+
+#usern
+{
+    height: 50px;
+}
+
+#pass
+{
+    height: 70px;
+}
+
+#btn
+{
+    height: 50px;
+}
+
+
