@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>zamowienie</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylEGZ.css" type="text/css">
+    </head>
+    <body>
+
+        <script>
+            function Funkcja()
+            {
+                const numer = document.getElementById('licz').value;
+                let NazwaCukierka = '';
+                const wynik = document.getElementById('wpisz'); 
+        
+                if (numer === '1')
+                {
+                    NazwaCukierka = 'cytryna';
+                }
+                else if (numer === '2')
+                {
+                    NazwaCukierka = 'liść';
+                }
+                else if (numer === '3')
+                {
+                    NazwaCukierka = 'banan';
+                }
+                else 
+                {
+                    NazwaCukierka = 'inny';
+                }
+        
+                wynik.textContent = `Twoje zamówienie to: ${NazwaCukierka}`;
+
+                const r = parseInt(document.getElementById('er').value);
+        const g = parseInt(document.getElementById('gie').value);
+        const b = parseInt(document.getElementById('be').value);
+        const btnKolor = document.getElementById('ZmianaKoloru');
+
+      
+        if (
+            !isNaN(r) && r >= 0 && r <= 255 &&
+            !isNaN(g) && g >= 0 && g <= 255 &&
+            !isNaN(b) && b >= 0 && b <= 255
+        ) {
+            btnKolor.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
+        }
+    
+            
+
+
+        </script>
+
+        <section id="baner"><h1>Strefa Zamowień</h1></section>
+        <section id="lewy">
+            <p>Numer kształtu:</p>
+            <input type="number" id="licz" name="liczenie">
+            <p>skomponuj swój kolor, podaj RGB</p>
+            <div id="numery">
+            <label for="er">R</label><input type="number" id="er" name="R">
+            <label for="gie">G</label><input type="number" id="gie" name="G">
+            <label for="be">B</label><input type="number" id="be" name="B">
+        </div>
+            <div id="guz">
+                <button onclick="Funkcja()">Zamówienie</button>
+            </div>
+            <p id="wpisz">Twoje zamówienie</p>
+            <button id="ZmianaKoloru">kolor</button>
+        </section>
+
+        
+    </body>
+</html>
