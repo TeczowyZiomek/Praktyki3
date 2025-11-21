@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1763560650 source:c:\users\msi\desktop\programowanie\webowe\tydzien\tydzien.cpp
+	<iostream>
+	<string>
+
+1763560651 source:c:\users\msi\desktop\programowanie\webowe\tydzien\petlafor.cpp
+	<iostream>
+	<string>
+

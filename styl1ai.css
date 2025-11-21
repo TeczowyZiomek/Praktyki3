@@ -1,0 +1,88 @@
+#reset margins
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#lewy
+{
+    float: left;
+    background-color: #00f204; /* light green paper */
+    overflow: hidden;
+    width: 25%;
+    height: 650px;
+    color: #111827; /* charcoal text */
+    
+
+}
+
+#srodek
+{
+    float:left;
+    background-color: #f4cc06; /* soft green canvas */
+    overflow: hidden;
+     width: 50%;
+    height: 650px;
+       display: flex;
+    justify-content: center;  /* poziome wyśrodkowanie */
+    align-items: center;      /* pionowe wyśrodkowanie */
+    overflow: hidden;
+    color: #111827; /* charcoal text */
+
+
+      
+    
+    
+   
+    
+
+
+}
+#prawo
+{
+    float:left;
+    background-color: #111827; /* deep charcoal */
+    overflow: hidden;
+     width: 25%;
+    height: 650px;
+    color: #e5e7eb; /* light gray text */
+    align-items: center;
+  
+}
+
+#naglowek
+{
+    margin-top: auto;
+    height:100px;
+    width:100%;
+    background-color: #ff5a1f; /* safety orange */
+    text-align: center;
+    color: #2c9118; /* on-orange text */
+    
+      
+}
+
+#naglowek h1
+{
+    margin: 0;
+    line-height: 100px;
+}
+
+#stopka
+{
+   background-color: #991b1b; /* blood red */
+   float: left;
+   height: 100px;
+   width: 100%;
+   color: #fef2f2; /* very light red tint */
+}
+
+#srodek img {
+    width: 99%;
+    height: 99%;
+    border-radius: 30px;
+    
+    
+}
+

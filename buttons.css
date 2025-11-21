@@ -1,0 +1,82 @@
+        option {
+            background-color: #f7ede8 ;
+            border: 1px solid black ;
+            padding: 1px;
+            color:rgb(42, 8, 134);!important
+            font-size: 15px ;
+        }
+        .btn-circle {
+            border-radius: 45%;
+        }
+        .btn-3d {
+            box-shadow: 0 4px 0 #005600;
+        }
+
+        .btn-3d:hover {
+            box-shadow: 0 2px 0 #005600;
+        }
+        .btn-danger.btn-3d {
+            background-color: #d9534f;
+            border-color: #d9534f;
+            color: #fff;
+        }
+
+        .btn-danger.btn-3d:hover {
+            box-shadow: 0 2px 0 #d9534f;
+        }
+        .button-rectangle-green {
+            padding: 7px 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        .button-rectangle-green:hover {background-color: #15e41c}
+        .button-rectangle-green:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px)
+        }
+        .button-rectangle-red {
+            padding: 7px 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #cc3a00;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        .button-rectangle-red:hover {background-color: #faa781}
+        .button-rectangle-red:active {
+            background-color: #dd2a42;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .button-rectangle-blue {
+            padding: 7px 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #0a86c0ea;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button-rectangle-blue:hover {
+            background-color: #6da8e7;
+
+        }
+
+        .button-rectangle-blue:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }

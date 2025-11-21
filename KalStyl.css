@@ -1,0 +1,96 @@
+*
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1
+{
+    text-align: center;
+    color:yellow
+}
+
+body
+{
+    background-color: gray;
+}
+
+#naglowek
+{
+   background-color: darkgray;
+   
+}
+
+
+#pierwsza
+{
+    height: 25px;
+}
+
+#druga
+{
+    height: 25px;
+}
+
+#plus
+{
+    height: 25px;
+}
+
+#minus
+{
+    height: 25px;
+}
+
+#razy
+{
+    height:25px;
+}
+
+#Przez
+{
+    height: 25px;
+}
+
+p
+{
+  color:lemonchiffon  
+}
+
+#wynik
+{
+    color: gold;
+}
+
+input
+{
+    background-color: darkgray;
+    color:lemonchiffon
+}
+
+button
+{
+    background-color: dimgray;
+    color:gold;
+    display: inline;
+    
+}
+
+#kal
+{
+    
+    text-align: center;
+}
+
+
+#plus,
+#minus,
+#razy,
+#Przez,
+#reszta,
+#pot,
+#Pro
+ {
+    display: inline-block;
+
+}
+
+

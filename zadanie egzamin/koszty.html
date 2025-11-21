@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Koszty</title>
+    <link rel="stylesheet" href="zadEgzStyl.css" type="text/css">
+</head>
+<body>
+    <div id="glowny">
+        <h1>Kalkulator kosztów montażu</h1>
+
+        <label for="tekst1">Szerokość pomieszczenia [m]:</label>
+        <input type="text" id="tekst1" name="m">
+
+        <label for="tekst2">Długość pomieszczenia [m]:</label>
+        <input type="text" id="tekst2" name="m">
+
+        <p>Typ panelu</p>
+
+        <div>
+            <input type="radio" id="lam" name="wybierz" value="lam">
+            <label for="lam">Panele laminowane</label>
+        </div>
+        <div>
+            <input type="radio" id="win" name="wybierz" value="win">
+            <label for="win">Panele winylowe</label>
+        </div>
+        <div>
+            <input type="radio" id="desk" name="wybierz" value="desk">
+            <label for="desk">Deska podłogowa</label>
+        </div>
+
+        <div>
+            <button id="oblicz">Oblicz</button>
+        </div>
+
+        <p id="wynik"></p>
+
+        <script>
+            
+            function obliczKoszty() {
+                var szerokosc = parseFloat(document.getElementById("tekst1").value);
+                var dlugosc = parseFloat(document.getElementById("tekst2").value);
+                var wybranyTyp = document.querySelector('input[name="wybierz"]:checked');
+                var paragraf = document.getElementById("wynik");
+
+                
+                if (isNaN(szerokosc) || isNaN(dlugosc) || !wybranyTyp || szerokosc <= 0 || dlugosc <= 0) {
+                    paragraf.innerHTML = "Wprowadź poprawne dane.";
+                  
+                    return;
+                }
+
+                var pole = szerokosc * dlugosc;
+                var kosztZaMetr = 0;
+
+                
+                if (wybranyTyp.value === "lam") {
+                    kosztZaMetr = 50;
+                } else if (wybranyTyp.value === "win") {
+                    kosztZaMetr = 70;
+                } else if (wybranyTyp.value === "desk") {
+                    kosztZaMetr = 100;
+                }
+
+                var koszt = pole * kosztZaMetr;
+
+               
+                var pole = Number(pole.toFixed(2));
+                var koszt = Number(koszt.toFixed(2));
+
+                
+                paragraf.innerHTML = 
+                    "Pole powierzchni pomieszczenia: " + pole + " m², koszt montażu: " + koszt + " zł.";
+               
+
+                
+                paragraf.setAttribute("class", "wynik-ok");
+            }
+
+            
+            document.getElementById("oblicz").addEventListener("click", obliczKoszty);
+        </script>
+    </div>
+</body>
+</html>
+

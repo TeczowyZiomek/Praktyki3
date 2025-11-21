@@ -1,0 +1,135 @@
+/* Styl dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    /* Podstawowe ustawienia */
+    body {
+        padding-top: 0 !important;
+    }
+
+    /* Nawigacja */
+    .navbar {
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+        background: #fff !important;
+        padding: 10px !important;
+    }
+
+    /* Przycisk hamburger */
+    .navbar-toggler {
+        display: block !important;
+        margin-left: auto;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    .navbar-toggler-bar {
+        display: block;
+        position: relative;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background: #333;
+        margin: 4px 0;
+        transition: all 0.2s;
+    }
+
+    /* Menu w wersji mobilnej */
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+    /* Lista menu */
+    .navbar-nav {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    /* Przyciski w menu */
+    .navbar .btn,
+    .navbar .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 1rem !important;
+        margin: 2px 0 !important;
+    }
+
+    /* Menu rozwijane */
+    .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        background: #f8f9fa;
+        border: slateblue;
+        box-shadow: none;
+    }
+
+    /* Ukrywanie wykresów */
+    .card canvas {
+        display: none !important;
+    }
+
+    /* Kafelki statystyk */
+    .card-stats {
+        margin-bottom: 10px;
+    }
+
+    .card-stats .card-body {
+        padding: 10px;
+    }
+
+    .numbers {
+        font-size: 0.9rem;
+    }
+
+    .card-category {
+        font-size: 0.8rem;
+    }
+
+    /* Powiadomienia */
+    #notificationsButton {
+        width: 100% !important;
+        margin: 5px 0 !important;
+        font-size: 0.9rem;
+    }
+
+    /* Układ treści */
+    .content {
+        padding: 10px !important;
+    }
+
+    .row {
+        margin: 0 -5px;
+    }
+
+    .col-lg-3, .col-md-6, .col-sm-6 {
+        padding: 5px;
+    }
+}
+
+/* Style dla bardzo małych ekranów */
+@media (max-width: 375px) {
+    .navbar-brand img {
+        max-width: 60px;
+    }
+
+    .numbers {
+        font-size: 0.8rem;
+    }
+}

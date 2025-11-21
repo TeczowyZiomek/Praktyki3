@@ -1,0 +1,55 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#pierwszy
+{
+    float: left;
+    height:250px;
+    width:50%;
+    background-color: aqua;
+}
+
+#drugi
+{
+    float: left;
+    height:250px;
+    width:50%;
+    background-color: blueviolet;
+}
+
+#trzeci
+{
+    float: left;
+    height:250px;
+    width:50%;
+    background-color: chocolate;
+}
+
+#lewo
+{
+    float: left;
+    height: 750px;
+    width:25%;
+    background-color: black;
+}
+#prawo
+{
+    float: right;
+    height: 750px;
+    width:25%;
+    background-color: blue;
+}
+
+#pierwszy img,
+#drugi img,
+#trzeci img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

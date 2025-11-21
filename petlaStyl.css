@@ -1,0 +1,44 @@
+#naglowek
+{
+    background-color: darkgreen;
+    color:greenyellow;
+    text-align: center;
+}
+
+body
+{
+    background-color: bisque;
+}
+
+#pierwszy
+{
+    background-color: green;
+    float: left;
+    height: 350px;
+    width: 50%;
+
+}
+
+#drugi
+{
+    background-color:chartreuse;
+    float: right;
+    height: 350px;
+    width: 50%;
+}
+
+#trzeci
+{
+    background-color: darkgreen;
+    float: left;
+    height: 300px;
+    width: 50%;
+}
+
+#czwarty
+{
+    background-color:darkolivegreen;
+    float: right;
+    height: 300px;
+    width: 50%;
+}

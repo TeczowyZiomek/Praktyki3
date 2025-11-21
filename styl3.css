@@ -1,0 +1,73 @@
+#naglowek img {
+    width: 100%;
+}
+
+#glowna
+{
+    height:270px
+}
+#stopka
+{
+    background-color: #625B5B;
+    color:white;
+    text-align: center;
+    margin: 20px;
+       
+    
+    
+}
+
+#menu
+{
+    background-color: #625B5B;
+    color:white;
+    text-align: center;
+    margin: 20px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#menu a,
+#menu a:visited
+{
+    font-weight: bold;
+    background-color: #EAEAEA;
+    color: #625B5B;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(255,255,255,0.6);
+
+}
+
+#body
+{
+    background-color:  #EAEAEA;
+}
+
+#ul
+{
+    margin-left:40px; 
+    list-style-type: circle;  
+}
+
+table
+{
+    color: #625B5B;
+    width: 60%;
+    margin-left: 40px;
+    text-align: center;
+    border: 1px dashed #625B5B;
+    border-collapse: collapse;
+}
+
+
+

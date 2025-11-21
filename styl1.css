@@ -1,0 +1,88 @@
+
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#lewy
+{
+    float: left;
+    background-color: blue;
+    overflow: hidden;
+    width: 25%;
+    height: 650px;
+    
+
+}
+
+#srodek
+{
+    float:left;
+    background-color: purple;
+    overflow: hidden;
+     width: 50%;
+    height: 650px;
+       display: flex;
+    justify-content: center;  /* poziome wyśrodkowanie */
+    align-items: center;      /* pionowe wyśrodkowanie */
+    overflow: hidden;
+
+
+      
+    
+    
+   
+    
+
+
+}
+#prawo
+{
+    float:left;
+    background-color: red;
+    overflow: hidden;
+     width: 25%;
+    height: 650px;
+    color: white;
+    align-items: center;
+  
+}
+
+#naglowek
+{
+    margin-top: auto;
+    height:100px;
+    width:100%;
+    background-color: cyan;
+    text-align: center;
+    color: darkorchid;
+    
+      
+}
+
+#naglowek h1
+{
+    margin: 0;
+    line-height: 100px;
+}
+
+#stopka
+{
+   background-color: orchid;
+   float: left;
+   height: 100px;
+   width: 100%;
+   color: aliceblue;
+}
+
+#srodek img {
+    width: 90%;
+    height: 600px;
+    border-radius: 30px;
+}
+
+
+
+

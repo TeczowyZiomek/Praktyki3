@@ -1,0 +1,246 @@
+/* Style dla modalu szczegółów komponentu */
+#authorDetailModal .modal-header {
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1.25rem;
+}
+
+#authorDetailModal .modal-header .btn-close-white {
+    filter: brightness(0) invert(1);
+}
+
+#authorDetailModal .modal-body {
+    padding: 0;
+}
+
+#authorDetailModal .table-sm th {
+    font-weight: 600;
+    color: #555;
+    padding-left: 0;
+}
+
+#authorDetailModal .table-sm td {
+    padding-left: 0;
+}
+
+#authorDetailModal .badge {
+    font-size: 0.85rem;
+    padding: 0.45em 0.65em;
+}
+
+#component_code {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+}
+
+#component_name {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Style dla historii zmian */
+#authorDetailModal .rounded-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optymalizacje dla tabeli głównej */
+#bomMatrixTable td {
+    padding: 0.4rem 0.75rem;
+    vertical-align: middle;
+}
+
+.dataTables_wrapper .row {
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+.td-right {
+    text-align: right !important;
+
+}
+#th {
+    text-align: center !important;
+
+}
+.th-center {
+    text-align: center !important;
+
+}
+.td-right-price {
+    text-align: right !important;
+    color: #0a7077;
+    transition: all 1.2s;
+}
+.td-right-price:hover {
+        background-color: #e9ecef;
+        color: #8b3503;
+    }
+
+
+/* Styl dla komórki autor/aktualizacja */
+.author-info-cell {
+    background-color: #f8f9fa;
+    border-left: 3px solid #3498db;
+    padding: 3px 8px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1.2;
+}
+
+.author-info-cell:hover {
+    background-color: #e9ecef;
+    border-left-color: #2c3e50;
+}
+
+.author-info-cell .text-primary {
+    color: #3498db !important;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.author-info-cell small.text-muted {
+    font-size: 85%;
+    display: inline-block !important;
+    color: #7f8c8d !important;
+}
+
+.author-info-cell .text-danger {
+    color: #e74c3c !important;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.author-info-cell .update-info {
+    margin-top: 2px;
+    border-top: 1px dotted #e0e0e0;
+    padding-top: 2px;
+}
+
+.author-info-cell .mx-3 {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
+/* Style dla przycisków akcji */
+.action-buttons .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+/* Optymalizacja belki kontrolnej DataTables */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_filter label {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    width: auto !important;
+    margin: 0 0.5rem !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    width: auto !important;
+    margin-left: 0.5rem !important;
+}
+
+/* Zmniejszenie marginesów w wierszach kontrolnych DataTables */
+.dataTables_wrapper .row {
+    margin: 0 !important;
+    align-items: center !important;
+}
+
+.dataTables_wrapper .row:first-child {
+    margin-bottom: 0.5rem !important;
+}
+
+.dataTables_wrapper .row:last-child {
+    margin-top: 0.5rem !important;
+}
+
+/* Zmniejszenie odstępów w głównej tabeli */
+.table td,
+.table th {
+    padding: 0.4rem 0.75rem !important;
+    vertical-align: middle !important;
+}
+
+/* Jednolity styl dla kontrolek */
+.dataTables_length select,
+.dataTables_filter input {
+    height: calc(1.5em + 0.5rem + 2px) !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.2rem !important;
+    border: 1px solid #ced4da !important;
+}
+
+/* Styl dla etykiet */
+.dataTables_length label,
+.dataTables_filter label {
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #495057 !important;
+}
+
+/* Zmniejszenie marginesów wokół paginacji */
+.dataTables_paginate {
+    margin-top: 0.5rem !important;
+    padding-top: 0 !important;
+}
+
+/* Optymalizacja informacji o ilości rekordów */
+.dataTables_info {
+    padding-top: 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+/* Kompaktowy układ belki kontrolnej */
+.dataTables_wrapper .row > div {
+    padding: 0 10px !important;
+}
+
+/* Dodatkowe style dla ujednolicenia wysokości */
+.dt-bootstrap4 {
+    padding: 0 !important;
+}
+
+/* Styl dla przycisków stron */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+
+/* Kontener dla elementów sterujących */
+.dt-controls-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.dt-controls-inline .dataTables_length,
+.dt-controls-inline .dataTables_filter {
+    margin-bottom: 0 !important;
+}

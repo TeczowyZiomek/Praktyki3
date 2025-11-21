@@ -1,0 +1,80 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3
+{
+    color: cadetblue;
+}
+
+p{
+    color: cadetblue;
+    display: block;
+    text-align: center;
+    
+    
+    
+}
+
+
+
+body
+{
+    background-color: bisque;
+    justify-content: flex-start;
+    display: flex;
+
+}
+
+button
+{
+    background-color: aquamarine;
+    color:lightcoral;
+}
+
+input 
+{
+    background-color: aquamarine;
+    color:lightcoral;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+fieldset
+{
+    background-color: antiquewhite;
+    
+    
+}
+
+legend
+{
+    color:cornflowerblue;
+    
+    
+}
+
+#op
+{
+    height: 30px;
+}
+
+#bat
+{
+    height: 30px;
+}
+
+#main
+{
+    background-color: burlywood;
+}
+
+#a
+{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 223, 186);
+    
+}
+

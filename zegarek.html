@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zegar</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="ZegarStyl.css" type="text/css">
+    </head>
+    <body>
+        <div id="naglowek">
+            <h1>ZEGAR</h1>
+        </div>
+        <div id="main">
+            <form id="f1" action="" method="get">
+                <div id="jed">
+            <input type="text" id="czas" name="zegarek" size="10">
+            </div>
+            <div id="przerwa">
+            <label for="odliczanie">Do przerwy zostało:</label>
+            <input type="text" id="odliczanie" name="odlicz" size="10">
+            </div>
+            <div id="end">
+            <label for="odliczanie">Do końca zostało:</label>
+            <input type="text" id="odliczanie2" name="odlicz2" size="10">
+            </div>
+            <div id="gif">
+                <img src="release me.gif" alt="release">
+            </div>
+
+            </form>
+        </div>
+        <script>
+            function zegar()
+            {
+                var data = new Date;
+                var godzina = data.getHours();
+                var min = data.getMinutes();
+                var sek = data.getSeconds();
+                var teraz = ""+godzina+
+                ((min<10)?":0":":")+min+
+                ((sek<10)?":0":":")+sek;
+                document.getElementById("f1").zegarek.value = teraz;
+                setTimeout("zegar()", 1000);
+            }
+            zegar();
+            function odliczanie() 
+                {
+                    var teraz = new Date();
+                    var cel = new Date();  
+
+                    cel.setHours(12);
+                    cel.setMinutes(30);
+                    cel.setSeconds(0);
+
+                    if (teraz > cel) {
+                        cel.setDate(cel.getDate() + 1);
+                    }
+
+                    var roznica = cel - teraz;
+
+                    var sek = Math.floor(roznica / 1000);
+                    var min = Math.floor(sek / 60);
+                    var godz = Math.floor(min / 60);
+
+                    sek = sek % 60;
+                    min = min % 60;
+
+                    var wynik =
+                        (godz < 10 ? "0" : "") + godz + ":" +
+                        (min < 10 ? "0" : "") + min + ":" +
+                        (sek < 10 ? "0" : "") + sek;
+
+                    document.getElementById("odliczanie").value = wynik;
+
+                    setTimeout(odliczanie, 1000);
+                }
+
+                odliczanie();
+
+
+                function odliczanie2()
+                {
+                    var teraz = new Date();
+                    var cel = new Date();
+
+                    cel.setHours(16);
+                    cel.setMinutes(0);
+                    cel.setSeconds(0);
+
+                    if (teraz > cel) {
+                        cel.setDate(cel.getDate() + 1);
+                    }
+
+                    var roznica = cel - teraz;
+
+                    var sek = Math.floor(roznica / 1000);
+                    var min = Math.floor(sek / 60);
+                    var godz = Math.floor(min / 60);
+
+                    sek = sek % 60;
+                    min = min % 60;
+
+                    var wynik =
+                        (godz < 10 ? "0" : "") + godz + ":" +
+                        (min < 10 ? "0" : "") + min + ":" +
+                        (sek < 10 ? "0" : "") + sek;
+
+                    document.getElementById("odliczanie2").value = wynik;
+
+                    setTimeout(odliczanie2, 1000);  
+                }
+
+                odliczanie2();
+
+
+        </script>
+    </body>
+</html>

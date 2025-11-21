@@ -1,0 +1,65 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: wheat
+}
+
+#naglowek {
+    background-image: linear-gradient(to bottom, #A0522D, #F5DEB3);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#menu {
+    background-color: wheat;
+    padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#glowny {
+    background-color: wheat;
+    padding: 50px;
+    width: 100%;
+    
+    box-sizing: border-box;
+}
+
+#stopka {
+    background-image: linear-gradient(to bottom, #F5DEB3,#A0522D);
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    background-color: Sienna;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+}
+
+td, th {
+    padding: 5px;
+}
+

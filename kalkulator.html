@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="KalStyl.css" type="text/css">
+
+        
+    </head>
+    <body>
+        <script>
+            function Dodaj()
+            {
+			   var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+			   var Druga=parseInt(document.getElementById("Druga").value);
+               var wynik1=Pierwsza+Druga;
+               document.getElementById("wynik").innerHTML=wynik1;
+            }
+
+            function Odejmij()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+				var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik2=Pierwsza-Druga;
+                document.getElementById("wynik").innerHTML=wynik2;
+            }
+
+            function Mnóż()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+                var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik3=Pierwsza*Druga;
+                document.getElementById("wynik").innerHTML=wynik3;
+            }
+
+            function Dziel()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+                var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik4=Pierwsza/Druga;
+                document.getElementById("wynik").innerHTML=wynik4;
+            }
+
+            function Potęga()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+                var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik5=Pierwsza**Druga;
+                document.getElementById("wynik").innerHTML=wynik5;
+            }
+
+            function Reszta()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+                var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik6=Pierwsza%Druga;
+                document.getElementById("wynik").innerHTML=wynik6;
+            }
+
+            function Proc()
+            {
+                var Pierwsza=parseInt(document.getElementById("Pierwsza").value);
+                var Druga=parseInt(document.getElementById("Druga").value);
+                var wynik6=Pierwsza/Druga*100;
+                document.getElementById("wynik").innerHTML=wynik6 + "%";
+            }
+
+ 
+              
+
+        </script>
+		
+        <div id="naglowek">
+        <h1><b>KALKULATOR</b></h1>
+        </div>
+        <div id="kal">
+            <div id="pierwsza">
+        Podaj liczbę: <input type="text" id="Pierwsza">
+            </div>
+            <div id="druga">
+        Podaj liczbę: <input type="text" id="Druga">
+        </div>
+        <div id="plus">
+        <button onclick="Dodaj()">Dodawanie</button>
+        </div>
+        <div id="minus">
+        <button onclick="Odejmij()">Odejmowanie</button>
+        </div>
+        <div id="razy">
+        <button onclick="Mnóż()">Mnożenie</button>
+        </div>
+        <div id="Przez">
+        <button onclick="Dziel()">Dzielenie</button>
+        </div>
+        <div id="pot">
+        <button onclick="Potęga()">Potęgowanie</button>      
+        </div>
+        <div id="reszta">
+            <button onclick="Reszta()">Reszta z dzielenia</button>
+        </div>
+        <div id="Pro">
+            <button onclick="Proc()">Procentowanie</button>
+
+        </div>
+
+        <p>Wynik:</p> <div id="wynik"></div>
+         
+       
+        </div>
+
+       
+    </body>
+</html>

@@ -1,0 +1,53 @@
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    background-color:darkslateblue;
+    color: cornflowerblue;
+}
+
+body
+{
+    background-color: rgb(44, 44, 135);
+}
+
+label
+{
+    color: cornflowerblue;
+}
+
+input
+{
+    color:cornflowerblue;
+    background-color: darkslateblue;
+ 
+}
+
+#main
+{
+   
+    text-align: center;
+    height: 200px;
+    
+}
+
+#przerwa
+{
+    height: 30px;
+}
+
+#jed
+{
+    height: 30px;
+}
+
+#gif
+{
+    height: 90px;
+
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Styl4" type="text/css">
+    </head>
+    <body>
+        <h1>Strona</h1>
+        <div>
+           <label for="wpisz">Wpisz swoje imię:</label> 
+           <input type="text" id="wpisz" name="wpisane" value=" ">
+        </div>
+           <div>
+           <input type="submit" value="Wyslij" onclick="Funkcja()"">
+           </div>
+           <p id="Para"> </p>
+        <script>
+            
+            function Funkcja()
+            {
+                var dane = document.querySelector('input[name="wpisane"]').value;
+                document.getElementById('Para').innerHTML = dane;
+            }
+           
+           
+        </script>
+    </body>
+</html>
