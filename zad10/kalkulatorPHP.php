@@ -8,7 +8,7 @@
 <body>
     <form method="POST" action="">
     <div id="naglowek">
-        <?php include 'czas test.php';?>
+        <?php include 'czasTest.php';?>
     <h1>KALKULATOR</h1>
     </div>
     <div id="n1">
