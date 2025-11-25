@@ -1,0 +1,3 @@
+        function wyswietl() {
+alert("Siema");
+        }

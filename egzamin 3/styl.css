@@ -1,0 +1,48 @@
+#logo img{
+    height: 100px;
+    width: 100px;
+}
+
+*
+{
+    background-color:  #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main
+{
+    width: 90%;
+    margin: auto;
+}
+
+#menu
+{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+    
+}
+
+#logo
+{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+#baner
+{
+    background-color:  #DDDDDD;
+    height: 200px;
+}
+
+#glowny
+{
+    color:navy
+}
