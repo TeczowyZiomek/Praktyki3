@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularz</title>
+        <link rel="stylesheet" href="JSstyl2.css" type="text/css">
+       <script>
+            function button()
+            {
+                let plec = document.querySelector('input[name="płeć"]:checked');
+            plec = plec ? plec.value : "nie wybrano";
+
+          
+            let jezyki = document.querySelectorAll('input[name="jezyk"]:checked');
+            let listaJezykow = [];
+            jezyki.forEach(j => listaJezykow.push(j.value));
+            if (listaJezykow.length === 0) listaJezykow = ["brak"];
+
+        
+            let zawod = document.querySelector('select').value;
+
+  
+            let opis = document.querySelector('input[name="opis"]').value;
+
+           
+            document.getElementById('demo1').innerHTML=("<h2>TWOJE DANE:</h2>" + "<p> <b>PŁEĆ</b> </p>"+ "<p>" + plec + "</p>"
+            + "<p> <b> JĘZYKI </b> </p>" + "<p>" + listaJezykow.join(",") + "</p>" + "<p> <b> ZAWÓD </p> </b>" + "<p>" + zawod +"</p>" + 
+            "<p> <b> INFO O SOBIE </b> </p>" + "<p>" + opis + "</p>" );
+                  
+            }
+        </script>
+
+    </head>
+    <body>
+        <div id="main">
+        <form>
+            <fieldset>
+            <legend> Formularz </legend>
+            <h3>Jaką masz płeć</h3>
+            <div id="mal">
+            <input type="radio" id="male" name="płeć" value="Mężczyzna">
+            <label for="male">Mężczyzna</label> 
+            </div>
+            <div id="fem">
+            <input type="radio" id="female" name="płeć" value="Kobieta"> 
+            <label for="female">Kobieta</label>
+            </div>
+            <div id="hel"> 
+            <input type="radio" id="heli" name="płeć" value="Helikopter"> 
+            <label for="heli">Helikopter bojowy</label>
+            </div>
+            <div id="t">
+            <h3>Języki którymi sie posługujesz</h3>
+            </div>
+            <div id="pol">
+            <input type="checkbox" id="Pl" name="jezyk" value="Polski">
+            <label for="PL">J. polski</label>
+            </div>  
+            <input type="checkbox" id="Ang" name="jezyk" value="Angielski">
+            <label for="Ang">J. angielski</label>
+            <div id="rus">
+            <input type="checkbox" id="Ros" name="jezyk" value="Rosyjski">
+            <label for="Ros">J. rosyjski</label>
+            </div>
+            <div id="niem">
+            <input type="checkbox" id="Deuch" name="jezyk" value="Niemiecki">
+            <label for="Deuch">J. niemiecki</label>
+            </div>
+            <div id="ita">
+            <input type="checkbox" id="Italy" name="jezyk" value="Włoski">
+            <label for="Italy">J. włoski</label>
+            </div>
+            <div id="Jp">
+            <input type="checkbox" id="Jap" name="jezyk" value="Japoński">
+            <label for="Jap">J. japoński</label>
+            </div>
+            <br>
+            <div id="t2">
+            <h3>Wybierz zawód</h3>
+            </div>
+            <div id="arb">
+            <select arbeit>
+                <option>brak</option>
+                <option>Informatyk/Programista</option>
+                <option>Policjant</option>
+                <option>Lekarz</option>
+                <option>Architekt</option>
+                <option>Nauczyciel</option>
+                <option>Inny</option>
+
+            </select>
+            </div>
+            <div id="pe">
+            <p>Opowiedz coś o sobie</p>
+            </div>
+            <div id="op">
+            <input type="text" name="opis">
+            </div>
+           
+
+            <div id="bat">
+        <button type="button" onclick="button()">Zatwierdź</button>
+                </div>
+        <!--<input type="submit" value="submit"> -->
+        <div id="res">
+        <input type="reset" value="reset">
+          </div>
+        </div>
+
+            </fieldset>
+        
+        </form>
+        <div id="a">
+        <p id="demo1"> </p>
+        </div>
+   
+    </body>
+</html>

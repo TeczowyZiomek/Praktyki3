@@ -4,11 +4,48 @@
         <meta charset="utf-8">
         <title>Firma IT</title>
         <link rel="stylesheet" href="styl.css" type="text/css">
-        <link rel="logo" href="logo.png" type="imagine/png">
+        <link rel="logo" href="logo1.png" type="imagine/png">
     </head>
     <body>
+
+      <script>
+      
+        function Wyslij()
+        {
+            let imie = document.getElementById("name").value;
+            let NAME = imie.toUpperCase();
+            
+
+            let nazwisko = document.getElementById("sname").value;
+            let SURNAME = nazwisko.toUpperCase();
+
+            let zgloszono = document.getElementById("zglos").value;
+
+            let checkbox = document.getElementById("regul");
+
+            let paragraf = document.getElementById("w");
+
+            if (checkbox.checked)
+            {
+              document.getElementById("w").innerHTML =   NAME + " " + SURNAME + "<br>" + "Treść Twojej sprawy: " + zgloszono;
+              paragraf.style.color='navy';
+              
+             
+            }
+            else {
+
+           
+              document.getElementById("w").innerHTML = "Musisz zapoznać się z regulaminem";
+              paragraf.style.color='red';
+            }
+        }
+
+
+      </script>
+
+
         <div id="main">
-            <div id="logo"><img src="logo.png"></div>
+            <div id="logo"><img src="logo1.png"></div>
             <div id="menu">
                 <a href="index.html">Strona głowna</a>
                 <a href="uslugi.html">Usługi</a>
@@ -17,33 +54,36 @@
             <div id="baner"><img src="gifIT.gif"></div>
             <div id="glowny">
                <h2>Kontakt</h2>
+               <form id="tabela">
                <table>
                 <tr>
               <td>Imie:</td>
-              <td><input type="text"></td>
+              <td><input type="text" id="name" name="imie"></td>
               </tr>
               <tr>
                 <td>Nazwisko:</td>
-                <td><input type="text"></td>
+                <td><input type="text" id="sname" name="nazw"></td>
               </tr>
               <tr>
                 <td>E-mail:</td>
-                <td><input type="email"></td>
+                <td><input type="email" id="mail" name="email"></td>
               </tr>
               <tr>
                 <td>Zgłoszenie</td>
-                <td><textarea cols="10" rows="40"></textarea></td>
+                <td><textarea cols="40" rows="10" id="zglos" name="area"></textarea></td>
               </tr>
               <tr>
                 <td></td>
-                <td><input type="checkbox">Zapoznałam/em się z regulaminem</td>
+                <td><input type="checkbox" id="regul" name="zapo">Zapoznałam/em się z regulaminem</td>
               </tr>
               <tr>
               <td></td>
-              <td><input type="reset" value="Resetuj"> <input type="submit" value="Prześlij"></td>
+              <td><button type="button" onclick="Resetuj()">Resetuj</button>  <button type="button" onclick="Wyslij()">Prześlij</button></td>
               </tr>
                </table>
+               </form>
                <hr>
+               <p id="w"></p>
             </div>
             <div id="stopka">Autor strony: <strong>0000000</strong></div>
 

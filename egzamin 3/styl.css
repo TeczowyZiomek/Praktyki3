@@ -3,6 +3,11 @@
     width: 100px;
     background-color: lightblue;
 }
+#baner img
+{
+    height: 180px;
+    background-color: #EEEEEE;
+}
 
 *
 {
@@ -73,19 +78,17 @@
     
     
     
+    
 }
 
-input[type="submit"]
+button
 {
     background-color: lightblue;
     color: navy;
+    
 }
 
-input[type="reset"]
-{
-    background-color: lightblue;
-    color: navy;
-}
+
 
 a
 {
